@@ -4,4 +4,8 @@
   <% if @user %>
   Logged in as: <%= @user.email %>
   <% end %>
+
+<%= button_to "Connect Twitter", "/auth/twitter", method: :post, class: "btn btn-primary"%>
+
+
   </div>

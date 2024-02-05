@@ -35,6 +35,11 @@ RSpec.describe 'home', type: :system do
   end
 end
 
+  it 'works' do
+      click_on "Login"
+      click_on "Forgot your password?"
+      expect(current_path).to eq(password_reset_path)
+    end
 
   it 'works' do
     expect(page).to have_selector('h1', text: 'Welcome to Scheduled Tweets')
